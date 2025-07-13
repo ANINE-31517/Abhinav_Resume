@@ -1,0 +1,369 @@
+%-------------------------
+% Resume in Latex
+% Author: Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+
+\urlstyle{same}
+
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+     
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document}
+
+
+%----------HEADING----------
+
+
+
+
+\begin{center}
+    {\Huge \scshape ABHINAV DWIVEDI} \\ \vspace{1pt}
+    Kanpur, Uttar Pradesh \\ \vspace{1pt}
+    \small \href{tel:#}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-8840261463} ~} \href{mailto:abhinavdwivedi590@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{abhinavdwivedi590@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/abhinav-dwivedi-89596322a/}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{linkedin.png}}}\ \underline{Linkedin}  ~
+    \href{https://github.com/ANINE-31517}{\raisebox{-0.2\height}\faGithub\ \underline{Github}} ~
+    \href{https://www.codechef.com/users/anine31517}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{codechef.jpg}}\ \underline{Codechef}} ~
+    \vspace{-8pt}
+    \href{https://leetcode.com/u/ANINE31517/}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{leetcode.png}}\ \underline{LeetCode}} ~
+    \vspace{-8pt}
+    \href{https://www.geeksforgeeks.org/user/anine31517/}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{gfg.png}}\ \underline{GFG}} ~
+\end{center}
+ \vspace{0.5mm}
+
+
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pranveer Singh Institute Of Technology, Kanpur}{2021 -- 2025}
+      {B.Tech - Computer Science and Engineering(AIML) - \textbf{CGPA} - \textbf{7.3}}{Kanpur, Uttar Pradesh}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures \& Algorithms
+                \item Object Oriented Programming
+                \item Database Management System
+                \item System Design
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+ \vspace{5pt}
+
+
+% -----------EXPERIENCE-----------
+\section{INTERNSHIP}
+ \resumeSubHeadingListStart
+
+
+   \resumeSubheading
+     {To The New Private Limited \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{Jan 2025 -- Present}
+     {\underline{Software Developer Trainee}}{Noida, India}
+     \resumeItemListStart
+       \vspace{2pt}
+       \resumeItem{Underwent an intensive Bootcamp training program at \textbf{To The New Pvt. Ltd.} focused on \textbf{core and advanced Java (including all major versions), Spring Boot, and backend API} development best practices.}
+       \vspace{2pt}
+       \resumeItem{Designed and developed a complete backend project as part of the training, implementing key \textbf{RESTful APIs such as user registration, login/logout, category management, and product handling.}}
+       \vspace{2pt}
+       \resumeItem{Gained hands-on experience with Spring Boot features including \textbf{validation, exception handling, layered architecture (Controller-Service-Repository), and integration with Hibernate/JPA for persistence.}}
+       \vspace{2pt}
+       \resumeItem{Followed standard industry practices for \textbf{code quality, modularity, and REST principles} throughout the development lifecycle.}
+ 
+     \resumeItemListEnd  
+ \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+
+    \vspace{-5pt}
+    
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\href{https://github.com/ANINE-31517/ANINE_STORE}{\textbf{\large{\underline{ECommerce-Backend-Project}}} \href{https://github.com/ANINE-31517/ECommerce-Backend-Project}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Java, Hibernate, MySQL, JPA, REST APIs, Maven, IntelliJ}}}{2024-2025}
+          
+          \vspace{-10pt}
+          
+        \resumeItemListStart
+        
+          \resumeItem {\normalsize {Engineered a secure and scalable backend architecture using Spring Boot and Hibernate, achieving \textbf{90\%} accuracy in user authentication and role-based access control.}}
+           \vspace{2pt}
+          \resumeItem {\normalsize {Optimized product catalog, cart, and category management modules; improved average API response time by \textbf{90\%} through efficient query handling and validation layers.}}
+          \vspace{2pt}
+          \resumeItem {\normalsize {Integrated email-based account activation, admin approval workflows, and metadata-driven category filtering, delivering over \textbf{95\%} functional coverage in business-critical features.}}
+        
+        \resumeItemListEnd
+          
+          \vspace{-13pt}
+         
+        \resumeProjectHeading
+          {\href{https://github.com/ANINE-31517/Social-Distancing-Detection-System}{\textbf{\large{\underline{Social-Distancing-Detection-System}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, YOLOv3, OpenCV, COCO, Google Colab}}}{2022-2023}
+          
+          \vspace{-7pt}
+          
+          \resumeItemListStart
+          
+            \resumeItem{\normalsize{Utilizes advanced AI algorithms and computer vision technologies to accurately detect and measure the distance between individuals, achieving an accuracy rate of \textbf{75-80\%}.}}
+            \vspace{2pt}
+            \resumeItem{\normalsize{Employs the pre-trained COCO (Common Objects in Context) dataset, consisting of over \textbf{3,30,000} labeled images for enhanced model training.}}
+            \vspace{2pt}
+            \resumeItem {\normalsize {Utilizes Python programming language and the OpenCV framework for developing, integrating, and implementing the detection system, achieving an overall accuracy of \textbf{75-80\%}.}}
+            
+          \resumeItemListEnd
+  
+          \vspace{-13pt}
+         
+    %   \resumeProjectHeading
+    %       {\href{https://github.com/ANINE-31517/User-Interaction-System}{\textbf{\large{\underline{User-Interaction-System}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, Tkinter, phone numbers, Pyttsx3, Python IDLE}}}{2020-2021}
+    %       \resumeItemListStart
+    %         \resumeItem{\normalsize{Tkinter develops a simple and intuitive graphical user interface (GUI) with \textbf{90\%} transparency.}}
+    %         \resumeItem{\normalsize{Facilitates seamless and offline data storage and retrieval with SQLite that provides \textbf{100k hits} per day.}}
+    %         \resumeItem {\normalsize {Incorporates text-to-speech functionality using pythons' \textbf{pyttsx3} library to provide auditory feedback and adds an interaction layer with \textbf{95\%} accuracy.}}
+    %         \resumeItem {\normalsize {Utilizes the phone numbers library to validate, parse, and format phone numbers and geo-codes with a decent accuracy of \textbf{95\%}.}}
+           
+    %       \resumeItemListEnd
+         
+    \resumeSubHeadingListEnd
+
+ \vspace{5pt}
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Database:}}{ \normalsize{ MySQL, SQLite, MongoDB}} \\
+     \vspace{4pt}
+     
+     \textbf{\normalsize{Languages:}}{ \normalsize{ Python, Java, C, C++, SQL, HTML, CSS, JavaScript}} \\
+     \vspace{4pt}
+     
+     \textbf{\normalsize{Technologies:}}{\normalsize{ 
+     Microservices, Monolithic, Spring Boot, Hibernate, Spring Data, Spring Security, Spring MVC, Spring Framework, REST APIs, Linux, RabbitMQ, Redis}} \\
+     \vspace{4pt}
+     
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{ {SonarQube, Gradle, Maven, Jenkins, Docker, Postman API, Git/GitLab/GitHub, Jira, IntelliJ, VS Code}}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+%-----------INVOLVEMENT---------------
+% \section{CODING PLATFORMS}
+% \resumeSubHeadingListStart
+%     \resumeItemListStart
+
+%         \resumeItem{\normalsize{I have solved \textbf{more than 600} problems on \textbf{GeeksForGeeks} 
+%         \href{https://www.geeksforgeeks.org/user/anine31517/}{\raisebox{-0.1\height}\faExternalLink}.}}
+
+%         \resumeItem{\normalsize{Resolved \textbf{over 630} problems on \textbf{Codechef} with Max Rating \textbf{1492} 
+%         \href{https://www.codechef.com/users/anine31517}{\raisebox{-0.1\height}\faExternalLink}.}}
+
+%         \resumeItem{\normalsize{Satisfactorily answered \textbf{1000+} problems on \textbf{Leetcode} with \textbf{27} badges and a Max Streak of \textbf{223} days 
+%         \href{https://leetcode.com/u/ANINE31517/}{\raisebox{-0.1\height}\faExternalLink}.}}
+
+%     \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+ 
+ %-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+
+$\hspace{0.5cm} \sbullet[.75] \hspace{0.2cm}${\href{https://github.com/ANINE-31517/Certifications/blob/main/DBMS-Certificate.pdf} {ChatGPT and GPT-4 LLM Guide-Prompt Engineering for Everyone on \textbf{Jul 9, 2025} - Udemy}}\hspace{1.6cm}\\
+
+$\hspace{0.5cm} \sbullet[.75] \hspace{0.1cm}$ {\href{https://github.com/ANINE-31517/Certifications/blob/main/Java_Certificate.pdf}{Java Training Complete Course for Java Beginners All in One on \textbf{Jan 28, 2025} - Udemy}} \hspace{1.6cm}\\
+
+$\hspace{0.5cm} \sbullet[.75] \hspace{0.1cm}$ {\href{https://github.com/ANINE-31517/Certifications/blob/main/AI_Certificate.pdf}{Introduction to Artificial Intelligence on \textbf{Aug 21, 2023} - Infosys Springboard}} \hspace{2.59cm}\\
+
+
+%--------------ExtraCurricular-------------
+
+ % \section{EXTRACURRICULAR}
+ %    \vspace{-4pt}
+ %    \resumeSubHeadingListStart        
+ %            \resumeItemListStart
+ %                \resumeItem{\normalsize {I Cleared Flipkart grid \textbf{5.0} round \textbf{1}.}}
+ %                \resumeItem{\normalsize {I Contributed \textbf{2} DSA-based problems on different coding platforms.}}
+ %            \resumeItemListEnd
+ %    \resumeSubHeadingListEnd
+ % \vspace{-11pt}
+
+\end{document}
+
+
+
